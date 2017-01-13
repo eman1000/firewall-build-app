@@ -1,0 +1,53 @@
+{
+  "name": "firewall-build-add",
+  "version": "1.0.0",
+  "description": "Mongodb 3.2.11 connection with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongod",
+    "nodejs"
+  ],
+  "author": "Emmancipate Musemwa",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-loader": "1.3.1",
+    "bootstrap-sass": "3.3.7",
+    "classnames": "^2.2.5",
+    "express": "4.14.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.9.0",
+    "history": "2.1.2",
+    "mongoose": "4.7.1",
+    "react": "15.4.1",
+    "react-bootstrap": "0.30.7",
+    "react-dom": "15.4.1",
+    "react-redux": "4.4.5",
+    "react-router": "2.6.1",
+    "react-router-redux": "4.0.5",
+    "redux": "3.5.2",
+    "redux-thunk": "2.1.0",
+    "resolve-url-loader": "1.6.0",
+    "sass-loader": "4.0.2",
+    "superagent": "3.1.0",
+    "url-loader": "0.5.7"
+  },
+  "devDependencies": {
+    "babel-core": "6.18.2",
+    "babel-eslint": "7.1.1",
+    "babel-loader": "6.2.8",
+    "babel-plugin-transform-object-rest-spread": "6.19.0",
+    "babel-polyfill": "6.16.0",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "css-loader": "0.26.1",
+    "node-sass": "3.13.0",
+    "redux-logger": "2.7.4",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.3"
+  }
+}
