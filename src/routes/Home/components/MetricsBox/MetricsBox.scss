@@ -1,0 +1,77 @@
+@import '../../../../../public/css/variables.scss';
+.box{
+	width: 22rem;
+	height: 22rem;
+	margin: auto;
+	padding: 0.7rem;
+	.boxHeader{
+		width: 100%;
+		color: $app_green;
+		margin: auto;
+		h5{
+			padding: 0;
+			margin-top: 0;
+			font-size: 1.6rem;
+		}
+		div{
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.arrowHolder{
+		margin: auto;
+		text-align: center;
+		.arrow{
+			width: 5rem;
+			height: 5rem;
+			position: relative;
+			font-size: 1.6rem;
+			margin: auto;
+			img{
+				width: 100%;
+				color: $app_white;
+			}
+			span{
+				position: absolute;
+				margin: auto;
+				display: block;
+				top: 25%;
+				left: 0;
+				right: 0;
+			}
+		}
+		.topArrow{
+			span{
+				color: $app_white;
+			}
+		}
+		.metricsText{
+			margin-top: 1rem;
+		}
+	}
+}
+.boxFailed{
+	border: solid 0.2rem $app_red;
+	h5{
+		color: $app_red;
+	}
+}
+.boxComplete{
+	border: solid 0.2rem $app_green !important;
+	h5{
+		color: $app_green;
+	}
+}
+.boxRunning{
+	border: solid 0.2rem $app_blue !important;
+	h5{
+		color: $app_blue;
+	}
+}
+.boxPending{
+	border: solid 0.2rem $app_dark_grey !important;
+	color: $app_dark_grey;
+	h5{
+		color: $app_dark_grey;
+	}
+}

@@ -1,3 +1,3 @@
 export default {
-	getFireWallBuildData: "mocks/getFireWallBuildData/index.json",
+    getFireWallBuildData: "mocks/getFireWallBuildData/index.json",
 };

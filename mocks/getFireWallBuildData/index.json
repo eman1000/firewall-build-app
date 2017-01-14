@@ -7,12 +7,16 @@
 	"metrics": {
 		"name":"Metrics",
 		"status":"pending",
-		"imgUrl":""
+		"test":null,
+		"maintainability":null,
+		"security":null,
+		"workmanship":null
 	},
 	"build": {
 		"name":"Build",
 		"status":"pending",
-		"imgUrl":""
+		"date":null,
+		"time":null
 	},
 	"unitTest": {
 		"name":"Unit Test",
@@ -36,12 +40,16 @@
 	"metrics": {
 		"name":"Metrics",
 		"status":"running",
-		"imgUrl":""
+		"test":40,
+		"maintainability":50,
+		"security":12,
+		"workmanship":11
 	},
 	"build": {
 		"name":"Build",
 		"status":"pending",
-		"imgUrl":""
+		"date":null,
+		"time":null
 	},
 	"unitTest": {
 		"name":"Unit Test",
@@ -65,12 +73,16 @@
 	"metrics": {
 		"name":"Metrics",
 		"status":"failed",
-		"imgUrl":""
+		"test":64,
+		"maintainability":-53,
+		"security":64,
+		"workmanship":72
 	},
 	"build": {
 		"name":"Build",
-		"status":"complete",
-		"imgUrl":""
+		"status":"failed",
+		"date":"10:46am",
+		"time":"4/17/2014"
 	},
 	"unitTest": {
 		"name":"Unit Test",
@@ -94,12 +106,16 @@
 	"metrics": {
 		"name":"Metrics",
 		"status":"complete",
-		"imgUrl":""
+		"test":64,
+		"maintainability":53,
+		"security":64,
+		"workmanship":72
 	},
 	"build": {
 		"name":"Build",
 		"status":"complete",
-		"imgUrl":""
+		"date":"10:46am",
+		"time":"4/17/2014"
 	},
 	"unitTest": {
 		"name":"Unit Test",
@@ -123,12 +139,16 @@
 	"metrics": {
 		"name":"Metrics",
 		"status":"failed",
-		"imgUrl":""
+		"test":-40,
+		"maintainability":50,
+		"security":12,
+		"workmanship":11
 	},
 	"build": {
 		"name":"Build",
-		"status":"pending",
-		"imgUrl":""
+		"status":"failed",
+		"date":"10:46am",
+		"time":"4/17/2014"
 	},
 	"unitTest": {
 		"name":"Unit Test",
@@ -152,12 +172,16 @@
 	"metrics": {
 		"name":"Metrics",
 		"status":"complete",
-		"imgUrl":""
+		"test":40,
+		"maintainability":50,
+		"security":12,
+		"workmanship":11
 	},
 	"build": {
 		"name":"Build",
 		"status":"complete",
-		"imgUrl":""
+		"date":"10:46am",
+		"time":"4/17/2014"
 	},
 	"unitTest": {
 		"name":"Unit Test",

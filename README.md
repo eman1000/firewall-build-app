@@ -51,7 +51,7 @@ Using fractal folder structure
 ### Run / Development Environment Setup
 - Go to Project root directory and run `npm install`. This will install Project dependencies.
 - Run `npm run dev`. This will start development node server. 
-- Go to http://localhost:8081/home/ from Browser.
+- Go to http://localhost:8081/home from Browser.
 
 
 
