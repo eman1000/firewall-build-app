@@ -21,7 +21,9 @@
 	"unitTest": {
 		"name":"Unit Test",
 		"status":"pending",
-		"imgUrl":""
+		"chartData":null,
+		"testsPassed":null,
+		"codeCovered":null
 	},
 	"functionalTest": {
 		"name":"Functional Test",
@@ -53,8 +55,18 @@
 	},
 	"unitTest": {
 		"name":"Unit Test",
-		"status":"pending",
-		"imgUrl":""
+		"status":"complete",
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":10
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":142
+	    }],
+		"testsPassed":73,
+		"codeCovered":76
 	},
 	"functionalTest": {
 		"name":"Functional Test",
@@ -87,7 +99,17 @@
 	"unitTest": {
 		"name":"Unit Test",
 		"status":"complete",
-		"imgUrl":""
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":10
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":142
+	    }],
+		"testsPassed":73,
+		"codeCovered":76
 	},
 	"functionalTest": {
 		"name":"Functional Test",
@@ -120,7 +142,17 @@
 	"unitTest": {
 		"name":"Unit Test",
 		"status":"complete",
-		"imgUrl":""
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":10
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":142
+	    }],
+		"testsPassed":73,
+		"codeCovered":76
 	},
 	"functionalTest": {
 		"name":"Functional Test",
@@ -152,8 +184,18 @@
 	},
 	"unitTest": {
 		"name":"Unit Test",
-		"status":"pending",
-		"imgUrl":""
+		"status":"complete",
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":10
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":142
+	    }],
+		"testsPassed":73,
+		"codeCovered":76
 	},
 	"functionalTest": {
 		"name":"Functional Test",
@@ -186,7 +228,17 @@
 	"unitTest": {
 		"name":"Unit Test",
 		"status":"complete",
-		"imgUrl":""
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":10
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":142
+	    }],
+		"testsPassed":73,
+		"codeCovered":76
 	},
 	"functionalTest": {
 		"name":"Functional Test",

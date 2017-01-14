@@ -3,6 +3,7 @@ import * as css from "./TableContainer.scss";
 import { Panel } from "react-bootstrap";
 import MetricsBox from "../MetricsBox";
 import BuildBox from "../BuildBox";
+import UnitTestBox from "../UnitTestBox";
 import classnames from "classnames";
 
 export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
@@ -41,6 +42,15 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
         complete:"static/icons/build_complete.png",
         accepted:"static/icons/firewall_accepted.png"
     };
+    const pieData = [{
+        "color":"#EB7D3B",
+        "label":"Orange",
+        "value":10
+    },{
+        "color":"#72AC4D",
+        "label":"Green",
+        "value":142
+    }];
     function getFireWallBuilds() {
         return (
             <div className={`row ${css.content}`}>
@@ -75,15 +85,15 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
                                         <span className={getGetBoxesClasses(functionalTest.status, showPanel["panel" + index])}/>
                                     </div>
                                 </div>
-                                <Panel className="row" collapsible expanded={showPanel["panel" + index]}>
+                                <Panel className="row" collapsible expanded={true} >
                                     <div className={`col-xs-12 col-sm-6 col-md-3`}>
                                         <MetricsBox metrics={obj.metrics || {}}/>
                                     </div>
-                                    <div className={`col-xs-12 col-sm-6 col-md-3 `}>
+                                    <div className={`col-xs-12 col-sm-6 col-md-3`}>
                                         <BuildBox build={obj.build || {}}/>
                                     </div>
                                     <div className={`col-xs-12 col-sm-6 col-md-3`}>
-                                     dcddc
+                                        <UnitTestBox pieData={obj.unitTest.chartData || []} unitTest={unitTest}/>
                                     </div>
                                     <div className={`col-xs-12 col-sm-6 col-md-3`}>
                                     dcdcd
