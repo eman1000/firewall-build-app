@@ -3,7 +3,7 @@ import * as css from "./UnitTestBox.scss";
 import { Pie } from "react-chartjs";
 import { ProgressBar } from "react-bootstrap";
 import classnames from "classnames";
-export const UnitTestBox = ({data, pieData}) => {
+export const UnitTestBox = ({data, pieData, toggleModal}) => {
     const statusBoxClasses = classnames({
         [css.box]: true,
         [css.boxPending]: data.status === "pending",
@@ -16,7 +16,7 @@ export const UnitTestBox = ({data, pieData}) => {
     });
     const progressLabel = <span className={codeCoveredClasses}>{data.codeCovered}%<span>code covered</span></span>;
     return (
-       <div className={statusBoxClasses}>
+       <div className={statusBoxClasses} onClick={toggleModal.bind(this, data.name)}>
             <div className={`row ${css.boxHeader}`}>
                 <div className="col-xs-12">
                     <h5>{data.name}</h5>

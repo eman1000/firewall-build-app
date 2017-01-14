@@ -4,6 +4,7 @@ import { push } from "react-router-redux";
 import services from "../../../services";
 export const GET_FIREWALL_BUILD_DATA = "GET_FIREWALL_BUILD_DATA";
 export const TOGGLE_PANEL = "TOGGLE_PANEL";
+export const TOGGLE_DETAIL_VIEW_MODAL = "TOGGLE_DETAIL_VIEW_MODAL";
 
 export function asyncGetData(){
     return (dispatch, store) => {
@@ -22,7 +23,12 @@ export function togglePanel(payload){
         payload
     };
 }
-
+export function toggleModal(payload){
+    return {
+        type:TOGGLE_DETAIL_VIEW_MODAL,
+        payload
+    };
+}
 function handleGetData(state, action){
     return update(state, {
         firewallBuildData:{
@@ -41,9 +47,20 @@ function handleTogglePanel(state, action){
         }
     });
 }
+function handleToggleDetailViewModal(state, action){
+    return update(state, {
+        showModal:{
+            $set:!state.showModal
+        },
+        selectedOption:{
+            $set:action.payload
+        }
+    });
+}
 const ACTION_HANDLERS = {
     GET_FIREWALL_BUILD_DATA:handleGetData,
-    TOGGLE_PANEL:handleTogglePanel
+    TOGGLE_PANEL:handleTogglePanel,
+    TOGGLE_DETAIL_VIEW_MODAL:handleToggleDetailViewModal
 };
 
 const initialState = {

@@ -1,0 +1,7 @@
+@import '../../../../../public/css/variables.scss';
+:global(.modal-body){
+	h2{
+		text-align: center;
+		color: $app_red;
+	}
+}

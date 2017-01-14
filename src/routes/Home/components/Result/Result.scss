@@ -4,41 +4,32 @@
     height: 18rem;
     margin: auto;
     padding: 0.7rem;
-    cursor: pointer;
-    &:hover{
-        box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
-    }
     .boxHeader{
         width: 100%;
-        color: $app_green;
+        color: $app_black;
         margin: auto;
+        text-align: center;
         h5{
             padding: 0;
             margin-top: 0;
             font-size: 1.6rem;
+            font-weight: normal;
         }
         div{
             margin: 0;
             padding: 0;
         }
     }
-    .imgHolder{
+    .resultHolder{
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        p{
-            font-size: 1.2rem;
-        }
-        .icon{
-            width: 5rem;
-            height: 5rem;
-            img{
-                width: 100%;
-            }
-        }
-        .metricsText{
-            margin-top: 1rem;
+        overflow-wrap: break-word;
+        h1{
+            margin: 0;
+            padding: 0;
+            font-size: 2.4rem;
         }
     }
     .dateTime{
@@ -47,6 +38,33 @@
         margin-right: auto;
         text-align: center;
         color: $app_black;
+    }
+    button{
+        margin-top: 2rem;
+        background-color: $app_blue;
+        border: solid 0.2rem $app_dark_grey;
+        color: $app_white;
+        width: 100%;
+        height: 4rem;
+        &:hover{
+            box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
+        }
+    }
+    select{
+        margin-top: 2rem;
+        background-color: $app_white;
+        border: solid 0.2rem $app_blue;
+        color: $app_white;
+        width: 100%;
+        height: 3rem;
+        color: $app_black;
+    }
+    .buttonWidth{
+        width: 9rem;
+    }
+    .deploy{
+        display: inline-block;
+        margin-left: 1rem;
     }
 }
 .boxFailed{

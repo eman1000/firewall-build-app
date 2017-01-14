@@ -4,9 +4,10 @@ import { Panel } from "react-bootstrap";
 import MetricsBox from "../MetricsBox";
 import BuildBox from "../BuildBox";
 import UnitTestBox from "../UnitTestBox";
+import Result from "../Result";
 import classnames from "classnames";
 
-export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
+export const TableContainer = ({firewallBuildData, showPanel, togglePanel, toggleModal}) => {
     function getHeaderClasses(state){
         const headerClasses = classnames({
             "container":true,
@@ -55,7 +56,7 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
         return (
             <div className={`row ${css.content}`}>
                 {   firewallBuildData.map((obj, index)=>{
-                    let { metrics, build, unitTest, functionalTest } = obj || {};
+                    let { metrics, build, unitTest, functionalTest, result } = obj || {};
                         return (
                             <div key={index} className={getHeaderClasses(obj.state )}>
                                 <div onClick={togglePanel.bind(this, {"key":"panel" + index, value:!showPanel["panel" + index]})} className={`row ${css.panelHeader}`}>
@@ -85,18 +86,21 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
                                         <span className={getGetBoxesClasses(functionalTest.status, showPanel["panel" + index])}/>
                                     </div>
                                 </div>
-                                <Panel className="row" collapsible expanded={true} >
+                                <Panel className="row" collapsible expanded={showPanel["panel" + index]} >
                                     <div className={`col-xs-12  ${css.colCustom}`}>
-                                        <MetricsBox metrics={obj.metrics || {}}/>
+                                        <MetricsBox toggleModal={toggleModal} metrics={obj.metrics || {}}/>
                                     </div>
                                     <div className={`col-xs-12 ${css.colCustom}`}>
-                                        <BuildBox build={obj.build || {}}/>
+                                        <BuildBox toggleModal={toggleModal} build={obj.build || {}}/>
                                     </div>
                                     <div className={`col-xs-12  ${css.colCustom}`}>
-                                        <UnitTestBox pieData={obj.unitTest.chartData || []} data={unitTest}/>
+                                        <UnitTestBox toggleModal={toggleModal} pieData={obj.unitTest.chartData || []} data={unitTest}/>
                                     </div>
                                     <div className={`col-xs-12 ${css.colCustom}`}>
-                                        <UnitTestBox pieData={obj.functionalTest.chartData || []} data={functionalTest}/>
+                                        <UnitTestBox toggleModal={toggleModal} pieData={obj.functionalTest.chartData || []} data={functionalTest}/>
+                                    </div>
+                                    <div className={`col-xs-12 ${css.colCustom}`}>
+                                        <Result toggleModal={toggleModal} state={obj.state} result={result || {}}/>
                                     </div>
 
                                 </Panel>
@@ -139,7 +143,7 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
                 </div>
             </div>
             {getFireWallBuilds()}
-            </div>       
+            </div>    
         </div>
     );
 };

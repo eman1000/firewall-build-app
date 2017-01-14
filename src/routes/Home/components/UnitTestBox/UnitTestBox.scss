@@ -4,6 +4,10 @@
     height: 18rem;
     margin: auto;
     padding: 0.7rem;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
+    }
     .boxHeader{
         width: 100%;
         color: $app_green;

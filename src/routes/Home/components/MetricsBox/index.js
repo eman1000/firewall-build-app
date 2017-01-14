@@ -1,7 +1,7 @@
 import React from "react";
 import * as css from "./MetricsBox.scss";
 import classnames from "classnames";
-export const MetricsBox = ({metrics}) => {
+export const MetricsBox = ({metrics, toggleModal}) => {
     const statusBoxClasses = classnames({
         [css.box]: true,
         [css.boxPending]: metrics.status === "pending",
@@ -43,7 +43,7 @@ export const MetricsBox = ({metrics}) => {
         }
     }
     return (
-       <div className={statusBoxClasses}>
+       <div className={statusBoxClasses} onClick={toggleModal.bind(this, metrics.name)}>
             <div className={`row ${css.boxHeader}`}>
                 <div className="col-xs-12">
                     <h5>{metrics.name}</h5>

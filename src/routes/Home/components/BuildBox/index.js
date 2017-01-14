@@ -1,7 +1,7 @@
 import React from "react";
 import * as css from "./BuildBox.scss";
 import classnames from "classnames";
-export const BuildBox = ({build}) => {
+export const BuildBox = ({build, toggleModal}) => {
     const statusBoxClasses = classnames({
         [css.box]: true,
         [css.boxPending]: build.status === "pending",
@@ -10,7 +10,7 @@ export const BuildBox = ({build}) => {
         [css.boxFailed]: build.status === "failed"
     });
     return (
-       <div className={statusBoxClasses}>
+       <div className={statusBoxClasses} onClick={toggleModal.bind(this, build.name)}>
             <div className={`row ${css.boxHeader}`}>
                 <div className="col-xs-12">
                     <h5>{build.name}</h5>

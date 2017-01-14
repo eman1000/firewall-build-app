@@ -65,6 +65,9 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$pending_bg, endColorstr=$app_white,GradientType=1 ); /* IE6-9 */
 		border: solid 0.2rem $app_dark_grey;
     	margin-top: 1rem;
+	    &:hover{
+            box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
+        }
 		span{
 			color: $app_dark_grey;
 			opacity: 5;
@@ -76,20 +79,24 @@
 		background: -webkit-linear-gradient(left,  rgba(248,250,252,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to right,  rgba(248,250,252,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$running_bg, endColorstr=$app_white,GradientType=1 ); /* IE6-9 */
-
 		border: solid 0.2rem $app_blue;
 	    margin-top: 1rem;
 		color: $app_blue;
+	    &:hover{
+            box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
+        }
 	}
 	.stateColorRed{
 		background: -moz-linear-gradient(left,  rgba(253,248,248,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(left,  rgba(253,248,248,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to right,  rgba(253,248,248,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$rejected_bg, endColorstr=$app_white,GradientType=1 ); /* IE6-9 */
-
 		border: solid 0.2rem $app_red;
 	    margin-top: 1rem;
 		color: $app_red;
+	    &:hover{
+            box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
+        }
 	}
 	.stateColorGreen{
 		background: -moz-linear-gradient(left,  rgba(248,250,248,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
@@ -99,6 +106,9 @@
 		border: solid 0.2rem $app_green;
 	    margin-top: 1rem;
 		color: $app_green;
+	    &:hover{
+            box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, .5);
+        }
 	}
 	@media (min-width: 992px) {
 		.colCustom{

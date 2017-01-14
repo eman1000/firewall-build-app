@@ -31,6 +31,10 @@
 		"chartData":null,
 		"testsPassed":null,
 		"codeCovered":null
+	},
+	"result":{
+		"message":"Pending",
+		"subMessage":"Run Build"
 	}
 }, {
 	"id": "432462",
@@ -84,6 +88,10 @@
 	    }],
 		"testsPassed":68,
 		"codeCovered":23
+	},
+	"result":{
+		"message":"Currently Running",
+		"subMessage":"Stop"
 	}
 }, {
 	"id": "432461",
@@ -137,6 +145,10 @@
 	    }],
 		"testsPassed":68,
 		"codeCovered":23
+	},	
+	"result":{
+		"message":"Change Rejected",
+		"subMessage":"Metrics Reduction"
 	}
 }, {
 	"id": "Tenrox-R1_1234",
@@ -190,6 +202,10 @@
 	    }],
 		"testsPassed":68,
 		"codeCovered":23
+	},	
+	"result":{
+		"message":null,
+		"subMessage":"Complete"
 	}
 }, {
 	"id": "432460",
@@ -243,6 +259,10 @@
 	    }],
 		"testsPassed":68,
 		"codeCovered":23
+	},	
+	"result":{
+		"message":"Change Rejected",
+		"subMessage":"Metrics Reduction"
 	}
 }, {
 	"id": "432459",
@@ -296,5 +316,9 @@
 	    }],
 		"testsPassed":68,
 		"codeCovered":23
+	},	
+	"result":{
+		"message":"Change Accepted",
+		"subMessage":"Auto-Merged"
 	}
 }]
