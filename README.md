@@ -11,7 +11,7 @@ GETTING STARTED WITH DEVELOPMENT
 1. Software installation:
     - Sublime Text 3
     - Currently stable Google Chrome
-    - [NodeJS 4.4.7][] (for development, testing, previewing, compiling and optimizing processes)
+    - [NodeJS 6.9.2][] (for development, testing, previewing, compiling and optimizing processes)
     - [Webpack][] locally installed
 2. Setting up Environment and running app
     - Install dependencies: In terminal, cd to __this__ folder: `npm install`
@@ -29,7 +29,7 @@ TECHNICAL SOLUTIONS
     
 ### DEVELOPMENT DEPENDENCIES
 
-- [NodeJS 4.4.7][]
+- [NodeJS 6.9.2][]
 - [Webpack][]
 - See _dependencies_ in `package.json`
 

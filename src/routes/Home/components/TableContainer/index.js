@@ -86,24 +86,26 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel, toggl
                                         <span className={getGetBoxesClasses(functionalTest.status, showPanel["panel" + index])}/>
                                     </div>
                                 </div>
-                                <Panel className="row" collapsible expanded={showPanel["panel" + index]} >
-                                    <div className={`col-xs-12  ${css.colCustom}`}>
-                                        <MetricsBox toggleModal={toggleModal} metrics={obj.metrics || {}}/>
-                                    </div>
-                                    <div className={`col-xs-12 ${css.colCustom}`}>
-                                        <BuildBox toggleModal={toggleModal} build={obj.build || {}}/>
-                                    </div>
-                                    <div className={`col-xs-12  ${css.colCustom}`}>
-                                        <UnitTestBox toggleModal={toggleModal} pieData={obj.unitTest.chartData || []} data={unitTest}/>
-                                    </div>
-                                    <div className={`col-xs-12 ${css.colCustom}`}>
-                                        <UnitTestBox toggleModal={toggleModal} pieData={obj.functionalTest.chartData || []} data={functionalTest}/>
-                                    </div>
-                                    <div className={`col-xs-12 ${css.colCustom}`}>
-                                        <Result toggleModal={toggleModal} state={obj.state} result={result || {}}/>
-                                    </div>
+                                { showPanel["panel" + index] &&
+                                    <div className={`row ${css.cutomPanel}`} >
+                                        <div className={`col-xs-12  ${css.colCustom}`}>
+                                            <MetricsBox toggleModal={toggleModal} metrics={obj.metrics || {}}/>
+                                        </div>
+                                        <div className={`col-xs-12 ${css.colCustom}`}>
+                                            <BuildBox toggleModal={toggleModal} build={obj.build || {}}/>
+                                        </div>
+                                        <div className={`col-xs-12  ${css.colCustom}`}>
+                                            <UnitTestBox toggleModal={toggleModal} pieData={obj.unitTest.chartData || []} data={unitTest}/>
+                                        </div>
+                                        <div className={`col-xs-12 ${css.colCustom}`}>
+                                            <UnitTestBox toggleModal={toggleModal} pieData={obj.functionalTest.chartData || []} data={functionalTest}/>
+                                        </div>
+                                        <div className={`col-xs-12 ${css.colCustom}`}>
+                                            <Result toggleModal={toggleModal} state={obj.state} result={result || {}}/>
+                                        </div>
 
-                                </Panel>
+                                    </div>
+                                }
                             </div>
                         );
 

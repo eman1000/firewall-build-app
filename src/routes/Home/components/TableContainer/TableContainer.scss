@@ -15,6 +15,13 @@
 		background-color: transparent;
 		margin-bottom: 0;
 	}
+	.cutomPanel{
+		padding-bottom: 2rem;
+		-webkit-animation: fadein 3s;
+		-moz-animation: fadein 3s;
+		-o-animation: fadein 3s;
+		animation: fadein 3s;
+	}
 	.borderBottom{
 		border-bottom: none;
 	}
@@ -138,5 +145,25 @@
 			margin-bottom: 2rem;
 		}
 	}
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
 
 }
