@@ -1,7 +1,7 @@
 @import '../../../../../public/css/variables.scss';
 .box{
-	width: 22rem;
-	height: 22rem;
+	width: 18rem;
+	height: 18rem;
 	margin: auto;
 	padding: 0.7rem;
 	.boxHeader{
@@ -21,11 +21,14 @@
 	.arrowHolder{
 		margin: auto;
 		text-align: center;
+		:global(.col-xs-6){
+			padding:0;
+		}
 		.arrow{
-			width: 5rem;
-			height: 5rem;
+			width: 4rem;
+			height: 4rem;
 			position: relative;
-			font-size: 1.6rem;
+			font-size: 1.4rem;
 			margin: auto;
 			img{
 				width: 100%;
@@ -46,7 +49,8 @@
 			}
 		}
 		.metricsText{
-			margin-top: 1rem;
+			margin-top: 0.2rem;
+			font-size: 1.2rem;
 		}
 	}
 }
@@ -74,4 +78,5 @@
 	h5{
 		color: $app_dark_grey;
 	}
+
 }

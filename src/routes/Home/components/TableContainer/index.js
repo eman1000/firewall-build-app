@@ -59,44 +59,44 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
                         return (
                             <div key={index} className={getHeaderClasses(obj.state )}>
                                 <div onClick={togglePanel.bind(this, {"key":"panel" + index, value:!showPanel["panel" + index]})} className={`row ${css.panelHeader}`}>
-                                    <div className="col-xs-3">
+                                    <div className="col-xs-3 col-sm-3">
                                         <span className={css.icon}><img src={stateIconsMap[obj.state]} alt=""/></span>
                                         <span className={getLinkActiveClasses(showPanel["panel" + index])}>{obj.id}</span>
                                     </div>
-                                    <div className="col-xs-1">
+                                    <div className="col-xs-2 col-sm-1">
                                         <span>{obj.owner}</span>
                                     </div>
-                                    <div className="col-xs-2">
+                                    <div className="col-xs-4 col-sm-2">
                                         <span>{ obj.timeStarted.date} {obj.timeStarted.time}</span>
                                     </div>
-                                    <div className="col-xs-1">
+                                    <div className="col-xs-3 col-sm-1">
                                         <span className={css.state}>{obj.state}</span>
                                     </div>
-                                    <div className="col-xs-1">
+                                    <div className="col-sm-1 hidden-xs">
                                         <span className={getGetBoxesClasses(metrics.status, showPanel["panel" + index])}/>
                                     </div>
-                                    <div className="col-xs-1">
+                                    <div className="col-sm-1 hidden-xs">
                                         <span className={getGetBoxesClasses(build.status, showPanel["panel" + index])}/>
                                     </div>
-                                    <div className="col-xs-1">
+                                    <div className="col-sm-1 hidden-xs">
                                         <span className={getGetBoxesClasses(unitTest.status, showPanel["panel" + index])}/>
                                     </div>
-                                    <div className="col-xs-2">
+                                    <div className="col-sm-2 hidden-xs">
                                         <span className={getGetBoxesClasses(functionalTest.status, showPanel["panel" + index])}/>
                                     </div>
                                 </div>
                                 <Panel className="row" collapsible expanded={true} >
-                                    <div className={`col-xs-12 col-sm-6 col-md-3`}>
+                                    <div className={`col-xs-12  ${css.colCustom}`}>
                                         <MetricsBox metrics={obj.metrics || {}}/>
                                     </div>
-                                    <div className={`col-xs-12 col-sm-6 col-md-3`}>
+                                    <div className={`col-xs-12 ${css.colCustom}`}>
                                         <BuildBox build={obj.build || {}}/>
                                     </div>
-                                    <div className={`col-xs-12 col-sm-6 col-md-3`}>
-                                        <UnitTestBox pieData={obj.unitTest.chartData || []} unitTest={unitTest}/>
+                                    <div className={`col-xs-12  ${css.colCustom}`}>
+                                        <UnitTestBox pieData={obj.unitTest.chartData || []} data={unitTest}/>
                                     </div>
-                                    <div className={`col-xs-12 col-sm-6 col-md-3`}>
-                                    dcdcd
+                                    <div className={`col-xs-12 ${css.colCustom}`}>
+                                        <UnitTestBox pieData={obj.functionalTest.chartData || []} data={functionalTest}/>
                                     </div>
 
                                 </Panel>
@@ -113,28 +113,28 @@ export const TableContainer = ({firewallBuildData, showPanel, togglePanel}) => {
             <div className="col-xs-12">
             <h1>Firewall / Build App</h1>
             <div className={`row ${css.tableHolder}`}>
-                <div className="col-xs-3">
+                <div className="col-xs-3 col-sm-3">
                     Changelist / Build
                 </div>
-                <div className="col-xs-1">
+                <div className="col-xs-2 col-sm-1">
                     Owner
                 </div>
-                <div className="col-xs-2">
+                <div className="col-xs-4 col-sm-2">
                     Time Start
                 </div>
-                <div className="col-xs-1">
+                <div className="col-xs-3 col-sm-1">
                     State
                 </div>
-                <div className="col-xs-1">
+                <div className="hidden-xs col-sm-1">
                     Matrics
                 </div>
-                <div className="col-xs-1">
+                <div className="hidden-xs col-sm-1">
                     Build
                 </div>
-                <div className="col-xs-1">
+                <div className="hidden-xs col-sm-1">
                     Unit Test
                 </div>
-                <div className="col-xs-2">
+                <div className="hidden-xs col-sm-2">
                     Functional Test
                 </div>
             </div>

@@ -3,26 +3,26 @@ import * as css from "./UnitTestBox.scss";
 import { Pie } from "react-chartjs";
 import { ProgressBar } from "react-bootstrap";
 import classnames from "classnames";
-export const UnitTestBox = ({unitTest, pieData}) => {
+export const UnitTestBox = ({data, pieData}) => {
     const statusBoxClasses = classnames({
         [css.box]: true,
-        [css.boxPending]: unitTest.status === "pending",
-        [css.boxComplete]: unitTest.status === "complete",
-        [css.boxRunning]: unitTest.status === "running",
-        [css.boxFailed]: unitTest.status === "failed"
+        [css.boxPending]: data.status === "pending",
+        [css.boxComplete]: data.status === "complete",
+        [css.boxRunning]: data.status === "running",
+        [css.boxFailed]: data.status === "failed"
     });
     const codeCoveredClasses = classnames({
         [css.codeCovered]: true
     });
-    const progressLabel = <span className={codeCoveredClasses}>{unitTest.codeCovered}%<span>code covered</span></span>;
+    const progressLabel = <span className={codeCoveredClasses}>{data.codeCovered}%<span>code covered</span></span>;
     return (
        <div className={statusBoxClasses}>
             <div className={`row ${css.boxHeader}`}>
                 <div className="col-xs-12">
-                    <h5>{unitTest.name}</h5>
+                    <h5>{data.name}</h5>
                 </div>
             </div>
-            { unitTest.status !== "pending" &&
+            { data.status !== "pending" &&
             <div>
                 <div className={`row ${css.chartHolder}`}>
                     <div className="col-xs-6">
@@ -32,14 +32,14 @@ export const UnitTestBox = ({unitTest, pieData}) => {
                     </div>
                     <div className="col-xs-6">
                         <div className={css.chartPercentage}>
-                            {unitTest.testsPassed}%
+                            {data.testsPassed}%
                             <span>tests passed</span>
                         </div>
                     </div>
                 </div>
                 <div className={`row ${css.progress}`}>
                     <div className="col-xs-12">
-                        <ProgressBar now={unitTest.codeCovered} label={progressLabel}/>
+                        <ProgressBar now={data.codeCovered} label={progressLabel}/>
                     </div>
                 </div>
             </div>

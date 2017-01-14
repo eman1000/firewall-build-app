@@ -28,7 +28,9 @@
 	"functionalTest": {
 		"name":"Functional Test",
 		"status":"pending",
-		"imgUrl":""
+		"chartData":null,
+		"testsPassed":null,
+		"codeCovered":null
 	}
 }, {
 	"id": "432462",
@@ -68,10 +70,20 @@
 		"testsPassed":73,
 		"codeCovered":76
 	},
-	"functionalTest": {
+	"functionalTest":  {
 		"name":"Functional Test",
-		"status":"pending",
-		"imgUrl":""
+		"status":"complete",
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":2145
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":4321
+	    }],
+		"testsPassed":68,
+		"codeCovered":23
 	}
 }, {
 	"id": "432461",
@@ -114,7 +126,17 @@
 	"functionalTest": {
 		"name":"Functional Test",
 		"status":"complete",
-		"imgUrl":""
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":2145
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":4321
+	    }],
+		"testsPassed":68,
+		"codeCovered":23
 	}
 }, {
 	"id": "Tenrox-R1_1234",
@@ -154,10 +176,20 @@
 		"testsPassed":73,
 		"codeCovered":76
 	},
-	"functionalTest": {
+	"functionalTest":  {
 		"name":"Functional Test",
 		"status":"complete",
-		"imgUrl":""
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":2145
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":4321
+	    }],
+		"testsPassed":68,
+		"codeCovered":23
 	}
 }, {
 	"id": "432460",
@@ -199,8 +231,18 @@
 	},
 	"functionalTest": {
 		"name":"Functional Test",
-		"status":"pending",
-		"imgUrl":""
+		"status":"complete",
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":2145
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":4321
+	    }],
+		"testsPassed":68,
+		"codeCovered":23
 	}
 }, {
 	"id": "432459",
@@ -240,9 +282,19 @@
 		"testsPassed":73,
 		"codeCovered":76
 	},
-	"functionalTest": {
+	"functionalTest":  {
 		"name":"Functional Test",
 		"status":"complete",
-		"imgUrl":""
+		"chartData":[{
+	        "color":"#EB7D3B",
+	        "label":"Orange",
+	        "value":2145
+	    },{
+	        "color":"#72AC4D",
+	        "label":"Green",
+	        "value":4321
+	    }],
+		"testsPassed":68,
+		"codeCovered":23
 	}
 }]

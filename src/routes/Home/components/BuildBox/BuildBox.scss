@@ -1,7 +1,7 @@
 @import '../../../../../public/css/variables.scss';
 .box{
-    width: 22rem;
-    height: 22rem;
+    width: 18rem;
+    height: 18rem;
     margin: auto;
     padding: 0.7rem;
     .boxHeader{
@@ -19,13 +19,16 @@
         }
     }
     .imgHolder{
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        p{
+            font-size: 1.2rem;
+        }
         .icon{
-            width: 7rem;
-            height: 7rem;
+            width: 5rem;
+            height: 5rem;
             img{
                 width: 100%;
             }
@@ -39,6 +42,7 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        color: $app_black;
     }
 }
 .boxFailed{

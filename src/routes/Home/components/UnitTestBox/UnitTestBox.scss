@@ -1,7 +1,7 @@
 @import '../../../../../public/css/variables.scss';
 .box{
-    width: 22rem;
-    height: 22rem;
+    width: 18rem;
+    height: 18rem;
     margin: auto;
     padding: 0.7rem;
     .boxHeader{
@@ -19,13 +19,12 @@
         }
     }
     .chartHolder{
-        margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         .chart{
-            width: 9rem;
-            height: 9rem;
+            width: 8rem;
+            height: 8rem;
             margin: auto;
             canvas{
                 width: 100%;
@@ -36,7 +35,6 @@
             color: $app_green;
             font-size: 3rem;
             vertical-align: middle;
-            margin-top: 2rem;
             span{
                 color: $app_black;
                 font-size: 1rem;
@@ -77,15 +75,22 @@
     }
 }
 :global(.progress){
-    margin-top: 3rem;
+    margin-top: 1.2rem;
     background: $diagram_red;
-    height:4rem;
+    height:3.5rem;
+    position: relative;
     .codeCovered{
         color: $app_green;
-        font-size: 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
         vertical-align: middle;
-        margin-top: 2rem;
+        margin-top: 0.2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         span{
+            line-height: 0;
             color: $app_black;
             font-size: 1rem;
             display: block !important;
