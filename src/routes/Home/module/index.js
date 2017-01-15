@@ -2,10 +2,12 @@ import request from "../../../util/request";
 import update from "react/lib/update";
 import { push } from "react-router-redux";
 import services from "../../../services";
-export const GET_FIREWALL_BUILD_DATA = "GET_FIREWALL_BUILD_DATA";
-export const TOGGLE_PANEL = "TOGGLE_PANEL";
-export const TOGGLE_DETAIL_VIEW_MODAL = "TOGGLE_DETAIL_VIEW_MODAL";
-
+import constants from "./actionConstants";
+const {
+    GET_FIREWALL_BUILD_DATA,
+    TOGGLE_PANEL,
+    TOGGLE_DETAIL_VIEW_MODAL
+} = constants;
 export function asyncGetData(){
     return (dispatch, store) => {
         request.get(services.getFireWallBuildData)

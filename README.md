@@ -5,8 +5,8 @@ Firewall / Build App
 Front End Software Architect Test Using REACT
 
 
-GETTING STARTED WITH DEVELOPMENT
---------------------------------
+GETTING STARTED WITH DEVELOPMENT AND RUNNING APP
+------------------------------------------------
 
 1. Software installation:
     - Sublime Text 3
@@ -17,6 +17,19 @@ GETTING STARTED WITH DEVELOPMENT
     - Install dependencies: In terminal, cd to __this__ folder: `npm install`
     - Run `npm run dev`
 
+UNIT TESTING USING JEST
+-----------------------
+1.  MAKE sure .barbelrc file is in the main directory before running tests with the following presets
+		`{
+		  "presets": [
+		     "react",
+		     "es2015"
+		  ]
+		}`
+2. Running tests
+	- Run `npm run test`	
+
+
 
 TECHNICAL SOLUTIONS
 -------------------
@@ -25,7 +38,8 @@ TECHNICAL SOLUTIONS
 - [Webpack] for building and bundling.
 - SASS (SCSS dialect) as CSS preprocessor
 - Bootstrap as base CSS framework
-- Minimum browser's support:
+- Minimum browser's support
+-Jest is used for unit testing
     
 ### DEVELOPMENT DEPENDENCIES
 
@@ -40,6 +54,7 @@ Below are list of main components
 - React: __15.3__
 - Redux: 3.5.2
 - Bootstrap: 3.3.7
+- Jest: 18.1.0
 
 FOLDER STRUCTURE
 ----------------
